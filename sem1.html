@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <meta property="og:image" content="logo.jpg" />
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     <style type="text/css">
+      .card.sky-border{
+    border-left: 7px #FF0000 solid !important;
+    background: linear-gradient(to right , #FF0000 50% , white 50%);
+    background-size: 200% 100%;
+    transition: all 0.5s ease-out;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+    background-position: right bottom;
+}
+  .card {
+  border: 1px solid;
+  padding: 5px;
+  box-shadow: 0px 10px 5px;
+}
+.sky-border {
+        position: relative;
+        z-index: 1;
+    }
+    .sky-border:after{
+      content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: scaleY(0);
+        transform-origin: bottom center;
+        background: rgb(250,70,70);
+        z-index: -1;
+        transition: transform 0.3s;
+    }
+    .sky-border:hover::after {
+        transform: scaleY(1);
+    }
+    </style>
+    <title>My eDU Dashboard</title>
+  </head>
+  <body>
+  
+      <div class="header border-danger">
+         <div class="logo  bg-dark" style="height:85px;"><a href="index.html">
+           <img src="Logo - Copy.png"/>
+          </a>
+        <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#exampleModal"style="float:right;">
+                Hi!,Student
+              </button></div>
+
+              <!-- Modal -->
+
+              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title text-danger bg-light" id="exampleModalLabel">Student Profile</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                       Student Name : Ellen D'Generous
+                     <br/> Enrollment Number : 200540107000
+                     <br/> Course : Degree
+                     <br/> Branch : Computer
+                     <br/> Division : BCX
+                     <br/> Batch No. : 1
+                     <br/> Roll No. : 001
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                     </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+    
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="sem1.html">Sem 1</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">&#9862;Log Out<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Subject</a>
+              </li>
+              <li class="nav-item dropdown">
+               <div class="dropdown nav-item">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Semester
+                </button>
+                <div class="dropdown-menu nav-item" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="sem1.html">Sem 1</a>
+                  <a class="dropdown-item" href="sem2.html">Sem 2</a>
+                  <a class="dropdown-item" href="page2.html">Sem 3</a>
+                </div>
+              </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sem1.html">Dashboard</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+
+        
+        <div class="card-deck">
+  <div class="card sky-border">
+    <img class="card-img-top" src="gtumcq1.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title" style="margin-top:25px;"><a href="gtumcq1.html">GTU MCQ</a></h5>
+    </div>
+     </div>
+      <div class="card sky-border">
+    <img class="card-img-top" src="quiz.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title" style="margin-top:25px;"><a href="quiz1.html">QUIZ</a></h5>
+    </div>
+     </div>
+      <div class="card sky-border">
+    <img class="card-img-top w-90" src="studymaterial1.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title"><a href="studymaterial1.html">Study Material</a></h5>
+    </div>
+     </div>
+   </div>
+
+
+        <div class="card-deck " style="margin-top:20px;">
+  <div class="card sky-border">
+    <img class="card-img-top" src="assignment1.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title"><a href="assignment1.html">Assignment</a></h5>
+    </div>
+     </div>
+      <div class="card sky-border">
+    <img class="card-img-top" src="attendence.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title"><br/><br/><br/><br/><a href="attendence1.html">Attendence</a></h5>
+    </div>
+     </div>
+      <div class="card sky-border">
+    <img class="card-img-top w-90" src="gturesults.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title"><br/><br/><br/><a href="gturesult1.html">Gtu Result</a></h5>
+    </div>
+     </div>
+   </div>
+
+      <div class="row">
+      <div class="card sky-border col-4 w-100" style="margin-top:20px;margin-left: 20px;">
+    <img class="card-img-top w-90" src="library2.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title"><br/><br/><br/><a href="library.html">Library</a></h5>
+    </div>
+     </div>
+        <div class="card sky-border col-4" style="margin-top:20px;margin-left: 20px;">
+    <img class="card-img-top  " src="busservice3.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title"><br/><br/><br/><a href="busservice.html">Transportation Service</a></h5>
+    </div>
+     </div>
+   </div>
+ 
+
+
+
+    <div class="footer text-white" style="background-color: black; text-align: right;">
+      2021&copy;eDU learning,Rajkot-Gujarat
+    </div>
+  
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
